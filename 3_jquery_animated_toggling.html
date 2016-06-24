@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="js/jquery-3.0.0.js"></script>
+<script>
+
+function fadeFcn(){
+	var durationToFadeOut = 600;
+	$("p").fadeOut(durationToFadeOut)
+}
+
+function fadeInFcn(){
+//	var durationToFadeIn = 600;
+//	$("p").fadeIn(durationToFadeIn)
+	$("p").fadeIn("slow")	
+}
+
+function toggleFcn(){
+	$("p").fadeToggle();
+}
+
+</script>
+
+</head>
+<body>
+<h1>jQuery</h1>
+
+<p>jQuery often simplifies javascript programming and offers a lot of nice, easy to use front end features.</p>
+
+<p>One way jquery simplifies things is with selectors.  Here is a list of examples</p>
+
+<dl>
+
+<dt><button onclick="fadeFcn()">$("p").fade()</button></dt>
+<dd>Demonstrates the jQuery fade() method, hiding all &ltp&gt elements.</dd>
+<br>
+
+<dt><button onclick="fadeInFcn()">$("p").fadeIn()</button></dt>
+<dd>Demonstrates the jQuery fadeIn() method, showing (fading in) all &ltp&gt elements.</dd>
+<br>
+
+
+<dt><button onclick=toggleFcn()>$(".my-toggle").toggle()</button></dt>
+<dd>Demonstrates the jQuery fadeToggle() method, toggling all elements having the class 'toggle' using a fading effect.</dd>
+
+<br/>
+
+
+<p class="my-toggle">A paragraph.  This paragraph has the class 'toggle'.</p>
+
+<div id="id1" class="my-toggle">
+<p>Another paragraph.  This paragraph is inside a div tag.  The div tag has the class "toggle".</p>
+</div>
+
+
+<div id="id2" class="my-toggle">
+This sentence is inside a div tag, but not inside a paragraph.  It should not hide with the &ltp&gt tags, but will be toggled with the 'toggle' class calls.
+</div>
+
+</body>
+
+</html>

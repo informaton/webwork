@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function alertFcn(){
+	window.alert("Booyah!");
+}
+
+function htmlOutputFcn(){
+document.write("<h3>Goodbye cruel page!</h3>(Click refresh to bring it back)");
+}
+
+function htmlElementFcn(){
+	document.getElementById("demo").innerHTML = "Augh!  Where did I go!";
+}
+
+function browserOutputFcn(){
+	console.log("You found me!");
+
+}
+
+</script>
+</head>
+<body>
+
+<h2>JavaScript Output</h2>
+<ul>
+	<li><a href="javascript:alertFcn()">Writing into an window alert box</a></li>
+	<li><a href="javascript:htmlOutputFcn()">Writing into the HTML output</a></li>
+	<li id="demo"><a href="javascript:htmlElementFcn()">Writing into an HTML element</a></li>
+	<li><a href="javascript:browserOutputFcn()">Writing into the browser console</a></li>
+</ul>
+</body>
+</html>
