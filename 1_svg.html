@@ -1,0 +1,153 @@
+<html>
+<head>
+<style>
+
+.line-numbers a{color:#AAA}.CodeRay .line-numbers tt{font-weight:bold}.CodeRay .line-numbers .highlighted{color:red}.CodeRay .line{display:block;float:left;width:100%}.CodeRay span.line-numbers{padding:0px 4px;margin-right:1em}.CodeRay .code{width:100%}ol.CodeRay{font-size:10pt}ol.CodeRay li{white-space:pre}.CodeRay .code pre{overflow:auto}.CodeRay
+.attribute-name{color:#f08}.CodeRay .attribute-value{color:#700}.CodeRay
+.code {
+    font-family: monospace;
+    white-space: pre;
+    background-color: #fffff1;
+}
+
+.code{width:100%}ol.CodeRay{font-size:10pt}ol.CodeRay
+</style>
+</head>
+<body>
+From: <a href="https://www.dashingd3js.com/basic-building-blocks">https://www.dashingd3js.com/basic-building-blocks</a>
+
+			<!--Scalable Vector Graphics (SVG)-->
+		  <h3>Scalable Vector Graphics (SVG)</h3>
+			<p class="friendly-paragraph">
+				Scalable Vector Graphics (SVG) is a family of specifications for creating two-dimensional vector graphics.
+				Vector graphics are not created out of pixels.
+				Vector graphics are created with paths having a start and end point, as well as points, curves and angles in between.
+				Since Vector Graphics are not created out of pixels, they can be scaled up to larger or smaller sizes without losing image quality.
+			</p>
+			<p class="friendly-paragraph">
+				SVG images and their behaviors are defined in XML text files.
+				The XML text can be included in an HTML document.
+				This text means that images can be created and edited in a text editor.
+				Also, since the DOM includes XML as part of the DOM specification, we can use the DOM Tree to access and update the structure, content
+				and style of SVG Images.
+			</p>
+			<p class="friendly-paragraph">
+				SVG comes with a basic set of shape elements:<br>
+				<ul style="padding-left:60px;font-size:1.25em;">
+				  <li>Rectangle</li>
+					<li>Circle</li>
+					<li>Ellipse</li>
+					<li>Straight Line</li>
+					<li>Polyline</li>
+					<li>Polygon</li>
+				</ul>				
+			</p>
+			<p class="friendly-paragraph">
+				Rectangle Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+					<rect x="0" y="0" width="50" height="50" fill="green" />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers">1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers">2</span>  <span class="tag">&lt;rect</span> <span class="attribute-name">x</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">y</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">fill</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">green</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="line-numbers">3</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<br>
+			<p class="friendly-paragraph">
+				Circle Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+					<circle cx="25" cy="25" r="25" fill="purple" />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers">1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers">2</span>  <span class="tag">&lt;circle</span> <span class="attribute-name">cx</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">cy</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">r</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">fill</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">purple</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="line-numbers">3</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<br>
+			<p class="friendly-paragraph">
+				Ellipse Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+			    <ellipse cx="25" cy="25" rx="25" ry="10" fill="red" />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers">1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers">2</span>  <span class="tag">&lt;ellipse</span> <span class="attribute-name">cx</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">cy</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rx</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">15</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">ry</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">10</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">fill</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">red</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="line-numbers">3</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<br>
+			<p class="friendly-paragraph">
+				Straight Line Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+						<line x1="5" y1="5" x2="40" y2="40" stroke="gray" stroke-width="5"  />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers">1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers">2</span>  <span class="tag">&lt;line</span> <span class="attribute-name">x1</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">5</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">y1</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">5</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">x2</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">40</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">y2</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">40</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">gray</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke-width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">5</span><span class="delimiter">&quot;</span></span>  <span class="tag">/&gt;</span>
+<span class="line-numbers">3</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<br>
+			<p class="friendly-paragraph">
+				Polyline Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+					<polyline fill="none" stroke="blue" stroke-width="2"
+					            points="05,30
+															15,30
+															15,20
+															25,20
+															25,10
+															35,10" />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> 1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers"> 2</span>  <span class="tag">&lt;polyline</span> <span class="attribute-name">fill</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">none</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke-width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">2</span><span class="delimiter">&quot;</span></span>
+<span class="line-numbers"> 3</span>    <span class="attribute-name">points</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">05,30</span></span>
+<span class="line-numbers"> 4</span><span class="string">            <span class="content">15,30</span></span>
+<span class="line-numbers"> 5</span><span class="string">            <span class="content">15,20</span></span>
+<span class="line-numbers"> 6</span><span class="string">            <span class="content">25,20</span></span>
+<span class="line-numbers"> 7</span><span class="string">            <span class="content">25,10</span></span>
+<span class="line-numbers"> 8</span><span class="string">            <span class="content">35,10</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="line-numbers"> 9</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<br>
+			<p class="friendly-paragraph">
+				Polygon Example & Code:<br/>
+				<br>
+				<svg width="50" height="50">
+					<polygon fill="yellow" stroke="blue" stroke-width="2"
+					            points="05,30
+															15,10
+															25,30" />
+				</svg>
+				<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers">1</span><span class="tag">&lt;svg</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">50</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="line-numbers">2</span>  <span class="tag">&lt;polygon</span> <span class="attribute-name">fill</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">yellow</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">blue</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">stroke-width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">2</span><span class="delimiter">&quot;</span></span>
+<span class="line-numbers">3</span>    <span class="attribute-name">points</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">05,30</span></span>
+<span class="line-numbers">4</span><span class="string">            <span class="content">15,10</span></span>
+<span class="line-numbers">5</span><span class="string">            <span class="content">25,30</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+<span class="line-numbers">6</span><span class="tag">&lt;/svg&gt;</span></pre></div>
+</div>
+
+			</p>
+			<p class="friendly-paragraph">
+				From all of these examples, you can see the power of Scalable Vector Graphics (SVG).
+				We will use these basic shapes in many of our D3.js Data Visualizations.
+			</p>
+			<!--/Scalable Vector Graphics (SVG)-->
+			
+</body>
+</html>
