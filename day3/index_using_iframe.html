@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My App</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/myapp.css">
+		<style>
+			html, body {
+				height:100%;
+			}
+			#img-brand {
+				border-style:solid;
+				border-color:black;
+				border-width:1px;
+				width:40px;
+				position:relative;
+				bottom:10px;
+			}
+			#mainFrame {
+				width:100%;
+				height:100%;
+				border-style:none;
+			}
+		</style>
+	</head>
+	
+	<body>
+
+
+		<!-- Static navbar -->
+		<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+		<div class="navbar-header">
+
+			<!--  This causes a button to show up in the corner when the screen is too small -->			
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			  </button>
+					
+			  <a class="navbar-brand" href="#">
+			  	<img id="img-brand" src="images/Informaton-1inch.png" alt="Informaton"/>
+			  </a>
+			</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li><a href="pages/home.html" target="mainIFrame">Home</a></li>
+				<li><a href="pages/about.html" target="mainIFrame">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li>
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Help <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">Contact</li>
+					<li><a href="mailto:hyattmoore@gmail.com">email</a></li>
+					<li><a href="tel:650-382-3442">phone</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
+
+
+		<iframe class="container-fluid" id="mainFrame" name="mainIFrame" src="pages/home.html"></iframe>
+		<hr>
+
+		<footer>
+			<p>&copy; Hyatt Moore IV, 2016</p>
+		</footer>
+
+		
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
